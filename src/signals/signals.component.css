@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  font-size: 1rem;
+}
+
+hr {
+  margin: 40px 20px;
+}
+
+p {
+  margin: 10px auto;
+}
+
+.counter-container {
+  width: 100%;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+}
+
+.pokemon-container {
+  margin: 10px auto;
+}
+
+.todo-container {
+  margin: 40px auto;
+}
+
+pre {
+  margin: 10px auto;
+}

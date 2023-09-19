@@ -1,0 +1,35 @@
+<div class="counter-container">
+  <p>Sample 1: Counter</p>
+  <p>{{ counter() }}</p>
+  <button class="btn" (click)="updateCounter()">Update Counter</button>
+</div>
+<hr />
+
+<div class="pokemon-container">
+  <p>Sample 2: Load pokemon images with id:</p>
+  <div>
+    <label
+      >Pokemon Id:
+      <span>{{ currentPokemonId() }}</span>
+    </label>
+    <div class="images">
+      <img [src]="imageUrls().previous" />
+      <img [src]="imageUrls().next" />
+    </div>
+  </div>
+  <div class="id-container">
+    <button class="btn" (click)="updatePokemonId(-2)">-2</button>
+    <button class="btn" (click)="updatePokemonId(-1)">-1</button>
+    <button class="btn" (click)="updatePokemonId(1)">+1</button>
+    <button class="btn" (click)="updatePokemonId(2)">+2</button>
+  </div>
+</div>
+
+<hr />
+
+<div class="todo-container">
+  <p>Sample 3: TODO list</p>
+  <div>All Todos: {{ todos().length }}</div>
+  <div>Remaining Todos: {{ remainingTodosCount() }}</div>
+  <pre>{{ filteredTodos() | json }}</pre>
+</div>

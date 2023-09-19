@@ -1,0 +1,19 @@
+/* Add application styles & imports to this file! */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(97, 139, 141, 1) 0%,
+    rgba(59, 121, 139, 1) 18%,
+    rgba(6, 65, 77, 1) 100%
+  );
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
